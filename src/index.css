@@ -1,1 +1,44 @@
-@import 'tailwindcss'
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *)); 
+
+@theme {
+  /* primary colors */
+  --color-primary: #007595;
+
+  /* text colors */
+  --color-textcolor-primary: #141414;
+  --color-textcolor-secondary: #727272;
+  --color-textcolor-tertiary: #a1a1a1;
+  --color-textcolor-disabled: #dcdcdc;
+  --color-textcolor-white: #ffffff;
+  --color-textcolor-highlight: #6852d6;
+
+  /* Font Sizes */
+  --text-large: 96px;
+  --text-h1: 70px;
+  --text-h2: 60px;
+  --text-h3: 54px;
+  --text-h4: 46px;
+  --text-h5: 36px;
+  --text-h6: 30px;
+  --text-body-lg: 20px;
+  --text-body-sm: 16px;
+  --text-caption-1: 12px;
+  --text-caption-2: 10px;
+}
+
+@layer theme {
+  .dark {
+    /* primary color */
+    --color-primary: #b6d3da;
+
+    /* text colors */
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #989898;
+    --color-text-tertiary: #858585;
+    --color-text-disabled: #4c4c4c;
+    --color-text-white: #141414;
+    --color-text-highlight: #6852d6;
+  }
+}

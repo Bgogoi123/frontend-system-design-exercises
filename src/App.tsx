@@ -1,11 +1,7 @@
-import PollWidget from "./components/PollWidget"
+import HomePage from "./pages/HomePage";
 
 const App = () => {
-  return (
-    <div className="">
-      <PollWidget onVoteAdd={()=>{}} onVoteRemove={()=>{}} options={[]} pollId="1" title=""  />
-    </div>
-  )
-}
+  return <div className="h-screen"><HomePage /></div>
+};
 
-export default App
+export default App;
