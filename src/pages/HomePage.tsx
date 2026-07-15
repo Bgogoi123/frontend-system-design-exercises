@@ -1,49 +1,48 @@
-import Button from "../components/ui/Button";
 import Card from "../components/ui/Card";
+import Navbar from "../components/Navbar";
+import About from "../components/About";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col gap-12 p-8 h-full">
-      <span className="text-large" role="heading">
-        Frontend System Design Exercises
-      </span>
+    <div className="bg-background text-primary">
+      <Navbar />
 
-      <div className="text-body-lg max-w-2/3">
-        <p>
-          This is an Frontend application for practicing{" "}
-          <strong>Frontend System Design</strong> from{" "}
-          <a
-            className="text-cyan-700 underline"
-            href="https://www.youtube.com/watch?v=UtI-MyijX00"
-          >
-            Roadside Coder's Youtube Playlist.
-          </a>
-        </p>
-        <p>
-          The Tech Stack used here is: React, TypeScript, and TailwindCSS, along
-          with Vite for build tool.
-        </p>
-        <p>
-          Vite is a build tool that aims to provide a faster and leaner
-          development experience for modern web projects. Vite is opinionated
-          and comes with sensible defaults out of the box. Read about what's
-          possible in the Features Guide. Support for frameworks or integration
-          with other tools is possible through Plugins. The Config Section
-          explains how to adapt Vite to your project if needed.
-        </p>
-      </div>
+      <div className="flex flex-col gap-12 p-8 h-full">
+        <About />
 
-      <div className="flex flex-row gap-2">
-        <Button>GitHub</Button>
-        <Button>Demo</Button>
-      </div>
+        {/* min-h-140 */}
 
-      <div className="flex flex-row gap-2">
-        <Card
-          title="Poll Widget"
-          description="DHFKDNDFMJGJHDFGJKDFNGjd sbbdsjbdsfbdsjfndsk DHFKDNDFMJG JHDFGJKDFNGjdsbb dsjbdsfb dsjfndsk DHFKDNDFM JGJHDFGJ KDFNGjdsbb dsjbdsfbdsjfndsk DHFKDNDFMJGJ HDFGJKDFNGjdsbbdsjb dsfbdsjfndsk"
-          requirements={[{id:"1", title:"Vote"}, {id:"2", title:"Multi Select"}, {id:"3", title:"Vote Persistency"}]}
-        />
+        <div className="py-4 flex flex-row gap-2 flex-wrap">
+          <Card
+            title="Poll Widget"
+            description="Use the self-baseline-last utility to align an item along the container's cross axis pneumonoultramicroscopicsilicovolcanoconiosis such that its baseline aligns with the last baseline in the container. Prefix an align-self utility with a breakpoint variant like md: to only apply the utility at medium screen sizes and above. Utilities for controlling how an individual flex or grid item is positioned along its container's cross axis."
+            requirements={[
+              { id: "1", title: "Vote" },
+              { id: "2", title: "Multi Select" },
+              { id: "3", title: "Vote Persistency" },
+            ]}
+          />
+          <Card
+            title="Poll Widget"
+            description="Use the self-baseline-last utility to align an item along the container's cross axis such that its baseline aligns with the last baseline in the container. Prefix an align-self utility with a breakpoint variant like md."
+            requirements={[
+              { id: "1", title: "Vote" },
+              { id: "2", title: "Multi Select" },
+              { id: "3", title: "Vote Persistency" },
+            ]}
+          />
+          <Card
+            title="Poll Widget"
+            description="Use the self-baseline-last utility to align an item along the container's cross axis."
+            requirements={[
+              { id: "1", title: "Vote" },
+              { id: "2", title: "Multi Select" },
+              { id: "3", title: "Vote Persistency" },
+            ]}
+          />
+        </div>
+
+        <About />
       </div>
     </div>
   );
