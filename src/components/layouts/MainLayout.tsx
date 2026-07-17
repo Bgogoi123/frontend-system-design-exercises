@@ -9,7 +9,7 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
   return (
     <div
       className={twMerge(
-        "h-screen bg-background text-textcolor-primary",
+        "h-screen bg-background text-textcolor-primary overflow-auto flex-col",
         theme === "dark" && "dark"
       )}
     >
