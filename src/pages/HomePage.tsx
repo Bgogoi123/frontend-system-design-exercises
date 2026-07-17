@@ -8,7 +8,7 @@ const HomePage = () => {
 
       <div className="py-4 flex flex-row gap-2 flex-wrap">
         <ComponentCard
-          description="Use the self-baseline-last utility to align an item along the container's cross axis pneumonoultramicroscopicsilicovolcanoconiosis such that its baseline aligns with the last baseline in the container. Prefix an align-self utility with a breakpoint variant like md: to only apply the utility at medium screen sizes and above. Utilities for controlling how an individual flex or grid item is positioned along its container's cross axis."
+          description="A scalable poll widget component with features like scalability, sinlge/multiple voting, vote addition & removal,persistent data, and more."
           src="/poll-widget"
           title="Poll Widget"
           requirements={[
