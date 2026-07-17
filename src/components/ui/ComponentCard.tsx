@@ -5,19 +5,29 @@ type Requirement = {
 
 interface CardProps {
   description?: string;
-  onClick?: () => void;
   requirements?: Requirement[];
+  src?: string;
   title: string;
 }
 
-const Card = ({ description, requirements, title }: CardProps) => {
+const ComponentCard = ({
+  description,
+  requirements,
+  src,
+  title,
+}: CardProps) => {
   return (
-    <div className="max-w-md cursor-pointer border border-background-50 rounded-md hover:bg-background-100 bg-background-50 p-4 duration-500 flex flex-col gap-4">
+    <a
+      href={src}
+      className="decoration-0 max-w-md cursor-pointer border border-background-50 rounded-md hover:bg-background-100 bg-background-50 p-4 duration-500 flex flex-col gap-4"
+    >
       <span className="text-h5 " role="heading">
         {title}
       </span>
 
-      {description && <p className="text-body-sm min-h-10 line-clamp-3">{description}</p>}
+      {description && (
+        <p className="text-body-sm min-h-10 line-clamp-3">{description}</p>
+      )}
 
       {requirements && requirements.length > 0 && (
         <div className="mt-auto flex flex-row gap-2 cursor-auto">
@@ -28,8 +38,8 @@ const Card = ({ description, requirements, title }: CardProps) => {
           ))}
         </div>
       )}
-    </div>
+    </a>
   );
 };
 
-export default Card;
+export default ComponentCard;
