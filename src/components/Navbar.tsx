@@ -20,7 +20,7 @@ const Navbar = () => {
         onClick={() =>
           setCurrentTheme((prev) => (prev === "dark" ? "light" : "dark"))
         }
-        className="ml-auto cursor-pointer rounded-full border border-gray-100 hover:bg-gray-100 duration-200 scale-100 active:scale-95 p-1"
+        className="ml-auto cursor-pointer rounded-full border border-gray-1 hover:bg-gray-1 duration-200 scale-100 active:scale-95 p-1"
       >
         <img src={currentTheme === "light" ? lightIconSrc : darkIconSrc} />
       </button>
