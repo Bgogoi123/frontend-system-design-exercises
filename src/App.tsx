@@ -1,16 +1,18 @@
 import { useState } from "react";
+import { RouterProvider } from "react-router-dom";
+
 import { ThemeContext, type Theme } from "./context/ThemeContext";
-import HomePage from "./pages/HomePage";
-import { twMerge } from "tailwind-merge";
+import { router } from "./routes/router";
+import MainLayout from "./components/layouts/MainLayout";
 
 const App = () => {
   const [theme, setTheme] = useState<Theme>("light");
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <div className={twMerge("h-screen", theme === "dark" && "dark")}>
-        <HomePage />
-      </div>
+      <MainLayout>
+        <RouterProvider router={router} />
+      </MainLayout>
     </ThemeContext.Provider>
   );
 };
