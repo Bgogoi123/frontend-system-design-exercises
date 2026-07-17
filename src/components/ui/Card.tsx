@@ -12,7 +12,7 @@ interface CardProps {
 
 const Card = ({ description, requirements, title }: CardProps) => {
   return (
-    <div className="max-w-md cursor-pointer border border-background-50 rounded-md hover:bg-background-100 bg-background-50 text-textcolor-primary p-4 duration-500 flex flex-col gap-4">
+    <div className="max-w-md cursor-pointer border border-background-50 rounded-md hover:bg-background-100 bg-background-50 p-4 duration-500 flex flex-col gap-4">
       <span className="text-h5 " role="heading">
         {title}
       </span>

@@ -2,7 +2,7 @@ import Button from "./ui/Button";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-12 text-textcolor-primary">
+    <div className="flex flex-col gap-12">
       <span className="text-large leading-24" role="heading">
         Frontend System Design Exercises
       </span>
