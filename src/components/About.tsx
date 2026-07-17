@@ -3,7 +3,7 @@ import Button from "./ui/Button";
 const About = () => {
   return (
     <div className="flex flex-col gap-12 text-textcolor-primary">
-      <span className="text-large" role="heading">
+      <span className="text-large leading-24" role="heading">
         Frontend System Design Exercises
       </span>
 
@@ -33,8 +33,8 @@ const About = () => {
       </div>
 
       <div className="flex flex-row gap-2">
-        <Button>GitHub</Button>
-        <Button>Demo</Button>
+        <Button variant="contained">GitHub</Button>
+        <Button variant="outlined">Demo</Button>
       </div>
     </div>
   );

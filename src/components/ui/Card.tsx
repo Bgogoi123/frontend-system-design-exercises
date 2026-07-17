@@ -12,8 +12,8 @@ interface CardProps {
 
 const Card = ({ description, requirements, title }: CardProps) => {
   return (
-    <div className="max-w-md cursor-pointer border border-background-50 rounded-md hover:bg-background-100 bg-background-50 p-4 duration-500 flex flex-col gap-4">
-      <span className="text-h5" role="heading">
+    <div className="max-w-md cursor-pointer border border-background-50 rounded-md hover:bg-background-100 bg-background-50 text-textcolor-primary p-4 duration-500 flex flex-col gap-4">
+      <span className="text-h5 " role="heading">
         {title}
       </span>
 
@@ -22,7 +22,7 @@ const Card = ({ description, requirements, title }: CardProps) => {
       {requirements && requirements.length > 0 && (
         <div className="mt-auto flex flex-row gap-2 cursor-auto">
           {requirements.map((req) => (
-            <span className=" rounded-md py-2 px-4 bg-gray-100" key={req.id}>
+            <span className=" rounded-md py-2 px-4 bg-gray-1" key={req.id}>
               {req.title}
             </span>
           ))}
